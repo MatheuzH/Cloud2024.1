@@ -19,7 +19,4 @@ public class Musicas {
     @Column
     private int duracao;
 
-    @OneToMany
-    private Playlist playlists;
-
 }

@@ -31,11 +31,10 @@ public class Usuario {
     private String senha;
 
     @OneToMany
+    @JoinColumn (name = "IdUsuario", referencedColumnName = "id")
     private List<Playlist> playlists;
 
     @OneToMany
-    private List<Plano> planos;
-
-
+    private List<Plano> assinatura;
 
 }

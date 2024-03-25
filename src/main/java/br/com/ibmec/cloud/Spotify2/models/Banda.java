@@ -6,6 +6,7 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
+import java.util.List;
 import java.util.UUID;
 
 @Data
@@ -27,5 +28,8 @@ public class Banda {
     @Column
     private String imagem;
 
+    @OneToMany
+    @JoinColumn (name = "idBanda", referencedColumnName = "id")
+    private List<Musicas> musicas;
 
 }

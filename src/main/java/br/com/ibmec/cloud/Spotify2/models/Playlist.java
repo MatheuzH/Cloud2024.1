@@ -20,10 +20,7 @@ public class Playlist {
     @Column
     private String nome;
 
-    @ManyToOne
-    private Usuario usuario;
-
-    @ManyToOne
-    private List<Musicas> musica;
+    @OneToMany
+    private List<Musicas> Musicas;
 
 }

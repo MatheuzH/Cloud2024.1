@@ -24,8 +24,6 @@ public class Plano {
     @NotBlank (message = "campo preço é obrigatório ")
     private double preco;
 
-    @OneToMany
-    private Usuario usuarios;
 
 
 
