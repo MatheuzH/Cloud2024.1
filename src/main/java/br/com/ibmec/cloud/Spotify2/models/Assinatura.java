@@ -8,19 +8,21 @@ import java.util.UUID;
 
 @Data
 @Entity
-public class Musicas {
+public class Assinatura {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @Column
-    private String nome;
-
-    @Column
-    private int duracao;
 
     @ManyToOne
     @JsonIgnore
-    private Banda banda;
+    private Usuario usuario;
+
+    @ManyToOne
+    @JsonIgnore
+    private Plano plano;
+
+    @Column
+    private boolean ativo;
 }

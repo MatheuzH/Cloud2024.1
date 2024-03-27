@@ -34,7 +34,5 @@ public class Usuario {
     @JoinColumn (name = "IdUsuario", referencedColumnName = "id")
     private List<Playlist> playlists;
 
-    @OneToMany
-    private List<Plano> assinatura;
 
 }

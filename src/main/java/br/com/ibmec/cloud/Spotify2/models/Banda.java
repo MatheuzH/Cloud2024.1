@@ -29,7 +29,6 @@ public class Banda {
     private String imagem;
 
     @OneToMany
-    @JoinColumn (name = "idBanda", referencedColumnName = "id")
     private List<Musicas> musicas;
 
 }
